@@ -1,0 +1,186 @@
+/* O fundo desfocado fica num pseudo-elemento de propósito:
+   "backdrop-filter" direto no header quebraria o menu mobile (position: fixed). */
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  height: var(--header-h);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(11, 12, 15, 0.82);
+  border-bottom: 1px solid var(--line);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.header--solid::before {
+  opacity: 1;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* ---------- Logo ---------- */
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.header__logo-mark {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.6rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.header__logo-text {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Botão do menu (celular/tablet) ---------- */
+.header__toggle {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: -0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0.75rem;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---------- Menu: tela cheia no celular ---------- */
+.header__menu {
+  position: fixed;
+  inset: var(--header-h) 0 0 0;
+  padding: 1.5rem var(--gutter) 2.5rem;
+  background: var(--bg);
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.5rem);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s;
+}
+
+.header__menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.header__list {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.header__link {
+  display: block;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.header__link[aria-current='true'] {
+  color: var(--accent);
+}
+
+/* ---------- Menu horizontal (notebook e desktop) ---------- */
+@media (min-width: 960px) {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__menu {
+    position: static;
+    padding: 0;
+    background: none;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .header__list {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .header__link {
+    position: relative;
+    padding: 0.5rem 0.9rem;
+    border: 0;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted);
+    transition: color 0.2s ease;
+  }
+
+  .header__link:hover,
+  .header__link[aria-current='true'] {
+    color: var(--text);
+  }
+
+  /* Pontinho de destaque na seção ativa */
+  .header__link[aria-current='true']:not(.header__link--cta)::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0.1rem;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .header__link--cta {
+    margin-left: 0.5rem;
+    border: 1px solid var(--line-strong);
+    color: var(--text);
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .header__link--cta:hover,
+  .header__link--cta[aria-current='true'] {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}

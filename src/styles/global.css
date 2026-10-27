@@ -1,0 +1,118 @@
+/* =====================================================================
+   VARIÁVEIS DE DESIGN
+   Para mudar a cor de destaque do site inteiro, altere só --accent.
+   ===================================================================== */
+:root {
+  /* Cores */
+  --bg: #0b0c0f;
+  --surface: #13151a;
+  --surface-2: #1a1d24;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --text: #efede8;
+  --muted: #a3a5ad;
+  --accent: #ff6a3d;
+  --accent-hover: #ff8460;
+  --accent-soft: rgba(255, 106, 61, 0.14);
+  --on-accent: #1c0b05;
+
+  /* Fontes */
+  --font-display: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  /* Medidas */
+  --container: 1120px;
+  --gutter: clamp(1.25rem, 5vw, 2.5rem);
+  --section-y: clamp(4.5rem, 10vw, 8rem);
+  --header-h: 4rem;
+  --radius: 1rem;
+  --radius-sm: 0.625rem;
+}
+
+/* =====================================================================
+   RESET E BASE
+   ===================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Rede de segurança contra rolagem horizontal inesperada */
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+/* Foco visível para quem navega pelo teclado */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

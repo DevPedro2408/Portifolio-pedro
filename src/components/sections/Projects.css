@@ -1,0 +1,149 @@
+.projects {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+.project {
+  display: flex; /* faz todos os cards da mesma linha terem a mesma altura */
+  min-width: 0;
+}
+
+.project__article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+@media (hover: hover) {
+  .project__article:hover {
+    border-color: var(--line-strong);
+    transform: translateY(-4px);
+  }
+}
+
+/* ---------- Imagem / preview ---------- */
+.project__media {
+  position: relative;
+  aspect-ratio: 8 / 5;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+
+  /* Cores do preview ilustrativo (usadas dentro do SVG) */
+  --pv-bg: #101217;
+  --pv-bar: #1a1d24;
+  --pv-surface: #181b22;
+  --pv-line: #3a4050;
+  --pv-muted: #2a2f3b;
+  --pv-accent: var(--accent);
+}
+
+.project__media svg,
+.project__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__preview-label {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(11, 12, 15, 0.8);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+}
+
+/* ---------- Conteúdo ---------- */
+.project__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.project__badge {
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.project__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.project__description {
+  margin-top: 0.6rem;
+  color: var(--muted);
+}
+
+.project__highlights {
+  display: grid;
+  gap: 0.4rem 1rem;
+  margin-top: 1.1rem;
+  font-size: 0.9375rem;
+}
+
+.project__highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project__highlights svg {
+  flex: none;
+  color: var(--accent);
+}
+
+@media (min-width: 480px) {
+  .project__highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.project__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+}
+
+/* margin-top: auto empurra os botões para o fim do card */
+.project__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 380px) {
+  .project__actions .btn {
+    flex: 1 1 100%;
+  }
+}
