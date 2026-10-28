@@ -17,22 +17,22 @@ const goals = [
   },
 ];
 
-export default function Goal() {
-  return (
-    <Section
-      id="objetivo"
-      eyebrow="05 · Objetivo"
-      title="Onde quero chegar."
-      intro="Quero começar minha carreira como Desenvolvedor Front-End, criando interfaces responsivas e bem cuidadas, e continuar evoluindo a cada projeto."
-    >
-      <ul className="goals">
-        {goals.map((goal, index) => (
-          <Reveal as="li" key={goal.title} className="goal" delay={index * 0.08}>
-            <h3 className="goal__title">{goal.title}</h3>
-            <p className="goal__text">{goal.text}</p>
-          </Reveal>
-        ))}
-      </ul>
-    </Section>
-  );
-}
+// export default function Goal() {
+//   return (
+//     <Section
+//       id="objetivo"
+//       eyebrow="05 · Objetivo"
+//       title="Onde quero chegar."
+//       intro="Quero começar minha carreira como Desenvolvedor Front-End, criando interfaces responsivas e bem cuidadas, e continuar evoluindo a cada projeto."
+//     >
+//       <ul className="goals">
+//         {goals.map((goal, index) => (
+//           <Reveal as="li" key={goal.title} className="goal" delay={index * 0.08}>
+//             <h3 className="goal__title">{goal.title}</h3>
+//             <p className="goal__text">{goal.text}</p>
+//           </Reveal>
+//         ))}
+//       </ul>
+//     </Section>
+//   );
+// }

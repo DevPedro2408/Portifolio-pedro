@@ -12,7 +12,7 @@ const quickFacts = [
 
 export default function About() {
   return (
-    <Section id="sobre" eyebrow="01 · Sobre mim" title="Transformando ideias em experiências digitais.">
+    <Section id="sobre" eyebrow="01 · Sobre mim" title="Construindo meu caminho na tecnologia.">
       <div className="about">
         <Reveal className="about__text">
           <p>
