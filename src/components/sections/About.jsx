@@ -22,7 +22,7 @@ export default function About() {
             Também participo do Programa Trilhas FAPEMA, em formação voltada para Back-End, e possuo certificação de Programador Web pelo IFRS, além de cursos da Alura em HTML, CSS e Front-End.
           </p>
           <p>
-            Busco minha primeira oportunidade na área de tecnologia para aplicar meus conhecimentos, adquirir experiência profissional e continuar evoluindo como desenvolvedor.
+            Estou aberto a novos projetos e oportunidades na área de tecnologia, buscando aplicar meus conhecimentos, desenvolver soluções e continuar evoluindo como desenvolvedor.
           </p>
         </Reveal>
 
