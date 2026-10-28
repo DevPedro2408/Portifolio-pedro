@@ -20,7 +20,6 @@ export const profile = {
       display: 'linkedin.com/in/SEU_PERFIL',
     },
     whatsapp: {
-      // Formato: https://wa.me/55 + DDD + número, só dígitos. Ex.: https://wa.me/5598900000000
       href: 'https://wa.me/5598991042408',
       display: '(98) 991042408',
     },

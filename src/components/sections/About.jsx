@@ -12,23 +12,17 @@ const quickFacts = [
 
 export default function About() {
   return (
-    <Section id="sobre" eyebrow="01 · Sobre mim" title="Aprendo construindo, um projeto de cada vez.">
+    <Section id="sobre" eyebrow="01 · Sobre mim" title="Transformando ideias em experiências digitais.">
       <div className="about">
         <Reveal className="about__text">
           <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas e estou em busca da minha
-            primeira oportunidade na área de tecnologia. O que mais me atrai é o Front-End: ver uma
-            ideia virar uma tela que alguém consegue usar de verdade.
+            Sou estudante de Análise e Desenvolvimento de Sistemas e tenho como objetivo atuar como Desenvolvedor Front-End. Tenho conhecimentos em HTML, CSS, JavaScript, React, Vite, Git e GitHub, além de experiência prática desenvolvendo projetos web. Gosto de transformar ideias em interfaces funcionais, responsivas e bem estruturadas.
           </p>
           <p>
-            Meus projetos, de sites para diferentes tipos de negócio a um sistema de mercado
-            pensado para uso real, me ensinaram a cuidar de detalhes que só aparecem na prática,
-            como responsividade, organização do código e clareza da interface.
+            Também participo do Programa Trilhas FAPEMA, atualmente em uma formação voltada para Back-End, ampliando meus conhecimentos sobre desenvolvimento de sistemas e o funcionamento das aplicações além da interface. Minha formação inclui o curso de Programador Web pelo IFRS, com conteúdos de HTML, CSS, lógica de programação, JavaScript, banco de dados e sistemas web.
           </p>
           <p>
-            Além do Front-End, participo do Programa Trilhas FAPEMA, em uma formação voltada para
-            Back-End. Entender como os dados e as regras funcionam do outro lado me ajuda a criar
-            interfaces melhores e a conversar com quem trabalha na outra ponta.
+            Além disso, possuo certificados da Alura em HTML e CSS: Ambientes de Desenvolvimento, Estrutura de Arquivos e Tags e Imersão Front-End 2ª Edição. Estou em busca da minha primeira oportunidade profissional na área de tecnologia, onde possa aplicar meus conhecimentos, aprender com novos desafios e continuar evoluindo como desenvolvedor.
           </p>
         </Reveal>
 
