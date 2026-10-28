@@ -8,8 +8,8 @@ export default function Education() {
     <Section
       id="formacao"
       eyebrow="03 · Formação"
-      title="Estudando em duas frentes."
-      intro="A graduação me dá a base. O Programa Trilhas FAPEMA me leva para o Back-End."
+      title="Construindo minha base em tecnologia."
+      intro="Formação acadêmica e complementar em tecnologia."
     >
       <ol className="education">
         {education.map((item, index) => (
