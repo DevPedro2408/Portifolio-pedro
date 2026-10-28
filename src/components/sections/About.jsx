@@ -16,13 +16,13 @@ export default function About() {
       <div className="about">
         <Reveal className="about__text">
           <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas e tenho como objetivo atuar como Desenvolvedor Front-End. Tenho conhecimentos em HTML, CSS, JavaScript, React, Vite, Git e GitHub, além de experiência prática desenvolvendo projetos web. Gosto de transformar ideias em interfaces funcionais, responsivas e bem estruturadas.
+            Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em Front-End. Tenho conhecimentos em HTML, CSS, JavaScript, React, Vite, Git e GitHub, além de experiência prática com projetos web.
           </p>
           <p>
-            Também participo do Programa Trilhas FAPEMA, atualmente em uma formação voltada para Back-End, ampliando meus conhecimentos sobre desenvolvimento de sistemas e o funcionamento das aplicações além da interface. Minha formação inclui o curso de Programador Web pelo IFRS, com conteúdos de HTML, CSS, lógica de programação, JavaScript, banco de dados e sistemas web.
+            Também participo do Programa Trilhas FAPEMA, em formação voltada para Back-End, e possuo certificação de Programador Web pelo IFRS, além de cursos da Alura em HTML, CSS e Front-End.
           </p>
           <p>
-            Além disso, possuo certificados da Alura em HTML e CSS: Ambientes de Desenvolvimento, Estrutura de Arquivos e Tags e Imersão Front-End 2ª Edição. Estou em busca da minha primeira oportunidade profissional na área de tecnologia, onde possa aplicar meus conhecimentos, aprender com novos desafios e continuar evoluindo como desenvolvedor.
+            Busco minha primeira oportunidade na área de tecnologia para aplicar meus conhecimentos, adquirir experiência profissional e continuar evoluindo como desenvolvedor.
           </p>
         </Reveal>
 
