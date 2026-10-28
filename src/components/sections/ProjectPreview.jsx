@@ -1,8 +1,3 @@
-// Preview ilustrativo de cada projeto, desenhado em SVG.
-// Ele aparece enquanto você não coloca um print real (campo "image" em projects.js).
-// As cores vêm de variáveis CSS (ver Projects.css), então acompanham o tema do site.
-
-// Moldura de navegador compartilhada por todas as variações.
 function BrowserFrame({ children }) {
   return (
     <svg viewBox="0 0 400 250" role="presentation" aria-hidden="true" focusable="false">

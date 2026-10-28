@@ -7,7 +7,7 @@ const quickFacts = [
   { label: 'Estudo', value: 'Análise e Desenvolvimento de Sistemas' },
   { label: 'Foco', value: 'Desenvolvimento Front-End' },
   { label: 'Em paralelo', value: 'Back-End no Programa Trilhas FAPEMA' },
-  { label: 'Busco', value: 'Minha primeira oportunidade na área' },
+  { label: 'Busco', value: 'Aberto a novos projetos e oportunidades' },
 ];
 
 export default function About() {

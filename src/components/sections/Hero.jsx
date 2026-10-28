@@ -9,10 +9,10 @@ export default function Hero() {
         <div className="hero__copy">
           <p className="hero__status">
             <span className="hero__status-dot" aria-hidden="true" />
-            Em busca da primeira oportunidade
+            Aberto a novos projetos e oportunidades
           </p>
 
-          <p className="hero__greeting">Olá, eu sou {profile.name}</p>
+          <p className="hero__greeting">Olá, eu sou {profile.firstName}</p>
 
           <h1 id="hero-titulo" className="hero__title">
             Desenvolvedor <span className="hero__title-accent">Front-End</span> em formação
@@ -51,7 +51,7 @@ export default function Hero() {
             <code>
               <span className="tk-key">const</span> <span className="tk-var">pedro</span> = {'{'}
               {'\n'}
-              {'  '}papel: <span className="tk-str">"Front-End em formação"</span>,{'\n'}
+              {'  '}papel: <span className="tk-str">"Desenvolvedor Web"</span>,{'\n'}
               {'  '}estuda: [<span className="tk-str">"ADS"</span>, <span className="tk-str">"Back-End"</span>],{'\n'}
               {'  '}programa: <span className="tk-str">"Trilhas FAPEMA"</span>,{'\n'}
               {'  '}stack: [{'\n'}
@@ -60,7 +60,7 @@ export default function Hero() {
               {'    '}
               <span className="tk-str">"JavaScript"</span>, <span className="tk-str">"React"</span>,{'\n'}
               {'  '}],{'\n'}
-              {'  '}busca: <span className="tk-str">"1ª oportunidade"</span>,{'\n'}
+              {'  '}busca: <span className="tk-str">"Novos projetos e oportunidades"</span>,{'\n'}
               {'}'};
             </code>
           </pre>
