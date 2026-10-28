@@ -15,7 +15,7 @@ export default function Hero() {
           <p className="hero__greeting">Olá, me chamo {profile.firstName}</p>
 
           <h1 id="hero-titulo" className="hero__title">
-            Desenvolvedor <span className="hero__title-accent">Web</span> em formação
+            Desenvolvedor <span className="hero__title-accent">Front-End</span> em formação
           </h1>
 
           <p className="hero__lead">{profile.tagline}</p>
