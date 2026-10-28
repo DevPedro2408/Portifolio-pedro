@@ -26,7 +26,7 @@ export const skillGroups = [
   },
   {
     title: 'Em formação',
-    items: ['Back-End (Programa Trilhas FAPEMA)'],
-    items: ['Análise e desenvolvimento de sistemas (Uniasselvi)'],
+    items: ['Back-End (Programa Trilhas FAPEMA)', 'Ads (Uniasselvi)'],
+
   },
 ];
