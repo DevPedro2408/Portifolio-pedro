@@ -1,21 +1,21 @@
-import Section from '../ui/Section.jsx';
-import Reveal from '../ui/Reveal.jsx';
-import './Goal.css';
+// import Section from '../ui/Section.jsx';
+// import Reveal from '../ui/Reveal.jsx';
+// import './Goal.css';
 
-const goals = [
-  {
-    title: 'Primeira oportunidade',
-    text: 'Entrar no mercado como Desenvolvedor Front-End e começar a construir experiência profissional.',
-  },
-  {
-    title: 'Aprender em equipe',
-    text: 'Trabalhar com pessoas mais experientes, receber feedback e evoluir junto com o time.',
-  },
-  {
-    title: 'Crescer como dev completo',
-    text: 'Seguir fortalecendo o Front-End e aproveitar o que aprendo de Back-End para entender o produto de ponta a ponta.',
-  },
-];
+// const goals = [
+//   {
+//     title: 'Primeira oportunidade',
+//     text: 'Entrar no mercado como Desenvolvedor Front-End e começar a construir experiência profissional.',
+//   },
+//   {
+//     title: 'Aprender em equipe',
+//     text: 'Trabalhar com pessoas mais experientes, receber feedback e evoluir junto com o time.',
+//   },
+//   {
+//     title: 'Crescer como dev completo',
+//     text: 'Seguir fortalecendo o Front-End e aproveitar o que aprendo de Back-End para entender o produto de ponta a ponta.',
+//   },
+// ];
 
 // export default function Goal() {
 //   return (
