@@ -32,7 +32,7 @@ export const projects = [
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     demoUrl: 'https://casadoburguer-prototipo.vercel.app/',
     repoUrl: 'https://github.com/DevPedro2408/casadoburguer2',
-    image: '../assets/casa-burguer2.png',
+    image: '../../assets/casa-burguer2.png',
     previewVariant: 'burger',
   },
   {
