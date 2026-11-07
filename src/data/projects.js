@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     id: 'site-hamburgueria',
-    name: 'Site de hamburgueria',
+    name: 'Casa do Burguer',
     badge: '',
     description:
       'Site responsivo para uma hamburgueria, com cardápio, produtos e carrinho de compras funcionando com JavaScript.',
@@ -32,7 +32,7 @@ export const projects = [
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     demoUrl: 'https://casadoburguer-prototipo.vercel.app/',
     repoUrl: 'https://github.com/DevPedro2408/casadoburguer2',
-    image: '',
+    image: '../assets/casa-burguer2.png',
     previewVariant: 'burger',
   },
   {
