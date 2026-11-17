@@ -1,4 +1,5 @@
 import casaBurguer from '../../assets/casa-burguer2.png'
+import clinicaRayol from '../../assets/clinicaRayol.png'
 
 export const projects = [
   {
@@ -39,7 +40,7 @@ export const projects = [
   },
   {
     id: 'site-clinica',
-    name: 'Site para clínica',
+    name: 'Clínica Rayol',
     badge: '',
     description:
       'Landing page responsiva para uma clínica, apresentando informações, serviços e formas de contato.',
@@ -49,10 +50,10 @@ export const projects = [
       'Seções de serviços',
       'Contato',
     ],
-    technologies: ['HTML5', 'CSS3'],
-    demoUrl: 'https://SEU_LINK_DO_PROJETO',
-    repoUrl: 'https://github.com/SEU_USUARIO/NOME-DO-REPOSITORIO',
-    image: '',
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
+    demoUrl: 'https://clinicarayol.vercel.app/',
+    repoUrl: 'https://github.com/DevPedro2408/Clinica-Rayol',
+    image: clinicaRayol,
     previewVariant: 'clinic',
   },
   {
