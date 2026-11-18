@@ -1,25 +1,26 @@
 import casaBurguer from '../../assets/casa-burguer2.png'
 import clinicaRayol from '../../assets/clinicaRayol.png'
+import finanly from '../../assets/finanly2.png'
 
 export const projects = [
-  {
-    id: 'sistema-mercado-pdv',
-    name: 'Sistema de mercado / PDV',
-    badge: 'Projeto para uso em mercado real',
-    description:
-      'Sistema para gerenciar produtos, estoque e vendas de um mercado, com leitura de código de barras, banco de dados e back-end.',
-    highlights: [
-      'Cadastro de produtos',
-      'Código de barras',
-      'Controle de estoque',
-      'Registro de vendas',
-    ],
-    technologies: ['Back-End', 'Banco de dados', 'Código de barras'],
-    demoUrl: 'https://SEU_LINK_DO_PROJETO',
-    repoUrl: 'https://github.com/SEU_USUARIO/NOME-DO-REPOSITORIO',
-    image: '',
-    previewVariant: 'pdv',
-  },
+  // {
+  //   id: 'sistema-mercado-pdv',
+  //   name: 'Sistema de mercado / PDV',
+  //   badge: 'Projeto para uso em mercado real',
+  //   description:
+  //     'Sistema para gerenciar produtos, estoque e vendas de um mercado, com leitura de código de barras, banco de dados e back-end.',
+  //   highlights: [
+  //     'Cadastro de produtos',
+  //     'Código de barras',
+  //     'Controle de estoque',
+  //     'Registro de vendas',
+  //   ],
+  //   technologies: ['Back-End', 'Banco de dados', 'Código de barras'],
+  //   demoUrl: 'https://SEU_LINK_DO_PROJETO',
+  //   repoUrl: 'https://github.com/SEU_USUARIO/NOME-DO-REPOSITORIO',
+  //   image: '',
+  //   previewVariant: 'pdv',
+  // },
   {
     id: 'site-hamburgueria',
     name: 'Casa do Burguer',
@@ -57,20 +58,20 @@ export const projects = [
     previewVariant: 'clinic',
   },
   {
-    id: 'emporio-pet',
-    name: 'Empório Pet',
+    id: 'dashboad-financeiro',
+    name: 'Finanly em desenvolvimento',
     badge: '',
     description:
-      'Site para pet shop com vitrine de produtos e layout responsivo, em uma interface moderna.',
+      'Dashboard financeiro para controle de receitas, despesas e metas, com gráficos interativos e interface responsiva.',
     highlights: [
-      'Vitrine de produtos',
+      'Gráficos interativos',
+      'Relatórios financeiros',
       'Layout responsivo',
-      'Interface moderna',
     ],
-    technologies: ['HTML5', 'CSS3'],
-    demoUrl: 'https://SEU_LINK_DO_PROJETO',
-    repoUrl: 'https://github.com/SEU_USUARIO/NOME-DO-REPOSITORIO',
-    image: '',
-    previewVariant: 'pet',
+    technologies: ['HTML5', 'CSS3', 'React.js', 'Vite', 'JavaScript', 'Recharts', 'LocalStorage'],
+    demoUrl: 'https://finanly-livid.vercel.app/',
+    repoUrl: 'https://github.com/DevPedro2408/finanly',
+    image: finanly,
+    previewVariant: 'financeiro',
   },
 ];
