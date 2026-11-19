@@ -3,24 +3,6 @@ import clinicaRayol from '../../assets/clinicaRayol.png'
 import finanly from '../../assets/finanly2.png'
 
 export const projects = [
-  // {
-  //   id: 'sistema-mercado-pdv',
-  //   name: 'Sistema de mercado / PDV',
-  //   badge: 'Projeto para uso em mercado real',
-  //   description:
-  //     'Sistema para gerenciar produtos, estoque e vendas de um mercado, com leitura de código de barras, banco de dados e back-end.',
-  //   highlights: [
-  //     'Cadastro de produtos',
-  //     'Código de barras',
-  //     'Controle de estoque',
-  //     'Registro de vendas',
-  //   ],
-  //   technologies: ['Back-End', 'Banco de dados', 'Código de barras'],
-  //   demoUrl: 'https://SEU_LINK_DO_PROJETO',
-  //   repoUrl: 'https://github.com/SEU_USUARIO/NOME-DO-REPOSITORIO',
-  //   image: '',
-  //   previewVariant: 'pdv',
-  // },
   {
     id: 'site-hamburgueria',
     name: 'Casa do Burguer',
@@ -59,7 +41,7 @@ export const projects = [
   },
   {
     id: 'dashboad-financeiro',
-    name: 'Finanly em desenvolvimento',
+    name: 'Finanly (em desenvolvimento)',
     badge: '',
     description:
       'Dashboard financeiro para controle de receitas, despesas e metas, com gráficos interativos e interface responsiva.',
@@ -74,4 +56,22 @@ export const projects = [
     image: finanly,
     previewVariant: 'financeiro',
   },
+  {
+    id: 'sistema-mercado-pdv',
+    name: 'Sistema de mercado / PDV (em desenvolvimento)',
+    badge: 'Projeto para uso em mercado real',
+    description:
+      'Sistema para gerenciar produtos, estoque e vendas de um mercado, com leitura de código de barras, banco de dados e back-end.',
+    highlights: [
+      'Cadastro de produtos',
+      'Código de barras',
+      'Controle de estoque',
+      'Registro de vendas',
+    ],
+    technologies: ['Back-End', 'Banco de dados', 'Código de barras'],
+    demoUrl: 'https://SEU_LINK_DO_PROJETO',
+    repoUrl: 'https://github.com/SEU_USUARIO/NOME-DO-REPOSITORIO',
+    image: '',
+    previewVariant: 'pdv',
+  }
 ];
