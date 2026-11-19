@@ -17,9 +17,9 @@ export default function Contact() {
   return (
     <Section
       id="contato"
-      eyebrow="06 · Contato"
+      eyebrow="05 · Contato"
       title="Vamos conversar?"
-      intro="Estou em busca da minha primeira oportunidade como Desenvolvedor Front-End. Se meu trabalho chamou sua atenção, vou ficar feliz em conversar."
+      intro="Quer tirar sua ideia do papel e ter um site para o seu negócio? Desenvolvo sites modernos, profissionais e responsivos para ajudar sua empresa a ter mais presença na internet. Vamos conversar!"
       className="contact"
     >
       <ul className="contact__grid">

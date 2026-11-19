@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__identity">
-          <p className="footer__name">{profile.name}</p>
+          <p className="footer__name">Pedro Augusto</p>
           <p className="footer__role">{profile.role}</p>
         </div>
 

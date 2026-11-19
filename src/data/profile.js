@@ -15,13 +15,13 @@ export const profile = {
       href: 'https://github.com/DevPedro2408',
       display: 'github.com/DevPedro2408',
     },
-    linkedin: {
-      href: 'https://www.linkedin.com/in/SEU_PERFIL',
-      display: 'linkedin.com/in/SEU_PERFIL',
-    },
     whatsapp: {
       href: 'https://wa.me/5598991042408',
       display: '(98) 991042408',
+    },
+    linkedin: {
+      href: 'https://www.linkedin.com/in/SEU_PERFIL',
+      display: 'linkedin.com/in/SEU_PERFIL',
     },
   },
 };
